@@ -7,84 +7,82 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f0f4f5; /* Light Arduino-inspired blue-gray */
     color: #333;
     line-height: 1.6;
 }
 
 /* Navigation */
 .navbar {
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #003087; /* Arduino blue */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 0.75rem 0; /* Reduced padding for smaller header */
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Smaller logo */
     font-weight: bold;
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
 .desktop-menu {
     display: none;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-link {
-    color: #555;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Smaller font */
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #00c4cc; /* Arduino teal accent */
 }
 
 .mobile-btn {
     background: none;
     border: none;
     cursor: pointer;
-    display: flex;
-    align-items: center;
 }
 
 .hamburger {
-    width: 1.75rem;
-    height: 1.75rem;
-    color: #555;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #fff;
 }
 
 .mobile-menu {
-    background-color: #fff;
+    background-color: #003087;
     width: 100%;
     text-align: center;
 }
 
 .mobile-link {
     display: block;
-    padding: 1rem;
-    color: #555;
+    padding: 0.75rem;
+    color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .mobile-link:hover {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #00c4cc;
 }
 
 @media (min-width: 768px) {
@@ -98,9 +96,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #007bff, #00c4cc);
+    background: linear-gradient(135deg, #003087, #00c4cc); /* Arduino colors */
     color: #fff;
-    padding: 6rem 1rem 4rem;
+    padding: 4rem 1rem 3rem; /* Reduced padding */
     text-align: center;
 }
 
@@ -110,27 +108,27 @@ body {
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Smaller title */
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.1rem; /* Smaller subtitle */
 }
 
 @media (min-width: 768px) {
     .hero-title {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 
 /* General Section Styles */
 .section {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .section-container {
@@ -139,28 +137,28 @@ body {
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 2.5rem;
-    color: #222;
+    margin-bottom: 2rem;
+    color: #003087;
 }
 
 /* About Section */
 .about-grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .about-img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
-    display: block;
+    border: 4px solid #00c4cc;
 }
 
 .about-content {
@@ -169,12 +167,12 @@ body {
 
 .about-text {
     margin-bottom: 1rem;
-    color: #666;
+    color: #555;
 }
 
 .about-skills {
-    font-size: 1.1rem;
-    color: #444;
+    font-size: 1rem;
+    color: #333;
 }
 
 @media (min-width: 768px) {
@@ -192,21 +190,21 @@ body {
 
 /* Projects Section */
 .projects {
-    background-color: #f9f9f9;
+    background-color: #f7f9fa;
 }
 
 .projects-grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .project-card {
     background-color: #fff;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -215,9 +213,10 @@ body {
 }
 
 .project-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: #003087;
 }
 
 .project-desc {
@@ -226,19 +225,19 @@ body {
 }
 
 .project-link {
-    color: #007bff;
+    background-color: #00c4cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .project-link:hover {
-    text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    background-color: #009ba1;
 }
 
 /* Contact Section */
@@ -253,16 +252,15 @@ body {
 .form-input, .form-textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
 }
 
 .form-input:focus, .form-textarea:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    border-color: #00c4cc;
+    box-shadow: 0 0 5px rgba(0, 196, 204, 0.3);
 }
 
 .form-textarea {
@@ -271,7 +269,7 @@ body {
 }
 
 .form-button {
-    background-color: #007bff;
+    background-color: #003087;
     color: #fff;
     padding: 0.75rem;
     border: none;
@@ -282,18 +280,67 @@ body {
 }
 
 .form-button:hover {
-    background-color: #0056b3;
+    background-color: #00205b;
 }
 
 /* Footer */
 .footer {
-    background-color: #222;
+    background-color: #003087;
     color: #fff;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-content h3 {
+    color: #003087;
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    color: #555;
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

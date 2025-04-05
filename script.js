@@ -15,9 +15,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth',
             block: 'start'
         });
-        // Close mobile menu if open
         if (!mobileMenu.classList.contains('hidden')) {
             mobileMenu.classList.add('hidden');
+        }
+    });
+});
+
+// Modal functionality
+const projectLinks = document.querySelectorAll('.project-link');
+const modals = document.querySelectorAll('.modal');
+const closeButtons = document.querySelectorAll('.modal-close');
+
+// Open modal when clicking "View Project"
+projectLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = link.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.remove('hidden');
+        }
+    });
+});
+
+// Close modal when clicking "X"
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal');
+        if (modal) {
+            modal.classList.add('hidden');
+        }
+    });
+});
+
+// Close modal when clicking outside
+modals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.add('hidden');
         }
     });
 });

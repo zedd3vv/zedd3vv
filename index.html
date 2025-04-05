@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zedd3vv</title>
+    <title>Zedd3vv - Arduino Enthusiast</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="#" class="logo">Zedd3vv</a>
             <div class="desktop-menu">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#projects" class="nav-link">Projects</a>
@@ -33,7 +33,7 @@
     <section class="hero">
         <div class="hero-container">
             <h1 class="hero-title">Zedrick Magbanua</h1>
-            <p class="hero-subtitle">STEM 12 Student</p>
+            <p class="hero-subtitle">STEM 12 Arduino Enthusiast</p>
         </div>
     </section>
 
@@ -44,8 +44,8 @@
             <div class="about-grid">
                 <img src="https://via.placeholder.com/300" alt="Profile" class="about-img">
                 <div class="about-content">
-                    <p class="about-text">I am a STEM 12 student with a passion for technology and aviation, striving to excel as both a developer and a pilot.</p>
-                    <p class="about-skills"><strong>Skills:</strong> HTML, CSS, JavaScript, Python, React</p>
+                    <p class="about-text">I am a STEM 12 student with a passion for technology and aviation, specializing in Arduino-based projects. I aim to blend my love for coding with real-world applications.</p>
+                    <p class="about-skills"><strong>Skills:</strong> Arduino, C++, HTML, CSS, JavaScript, Python</p>
                 </div>
             </div>
         </div>
@@ -54,22 +54,22 @@
     <!-- Projects Section -->
     <section id="projects" class="section projects">
         <div class="section-container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Arduino Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3 class="project-title">Project 1</h3>
-                    <p class="project-desc">Arduino Based Automated Library Book Management System</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3 class="project-title">Automated Library System</h3>
+                    <p class="project-desc">An Arduino-based system for managing library books with RFID.</p>
+                    <button class="project-link" data-modal="modal1">View Project</button>
                 </div>
                 <div class="project-card">
-                    <h3 class="project-title">Project 2</h3>
-                    <p class="project-desc">Python script for data analysis</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3 class="project-title">Weather Station</h3>
+                    <p class="project-desc">An Arduino weather monitor with temperature and humidity sensors.</p>
+                    <button class="project-link" data-modal="modal2">View Project</button>
                 </div>
                 <div class="project-card">
-                    <h3 class="project-title">Project 3</h3>
-                    <p class="project-desc">Mobile-responsive portfolio website</p>
-                    <a href="#" class="project-link">View Project</a>
+                    <h3 class="project-title">Smart Home Controller</h3>
+                    <p class="project-desc">A home automation system using Arduino and relays.</p>
+                    <button class="project-link" data-modal="modal3">View Project</button>
                 </div>
             </div>
         </div>
@@ -94,6 +94,35 @@
             <p>© 2025 Zedd3vv. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal hidden">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Automated Library System</h3>
+            <p>An Arduino-based system using RFID to track and manage library books efficiently.</p>
+            <p><strong>Tech:</strong> Arduino Uno, RFID Module, LCD Display</p>
+            <p><strong>Features:</strong> Book check-in/out, real-time tracking</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal hidden">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Weather Station</h3>
+            <p>A compact weather station displaying temperature and humidity on an OLED screen.</p>
+            <p><strong>Tech:</strong> Arduino Nano, DHT11 Sensor, OLED Display</p>
+            <p><strong>Features:</strong> Real-time data, portable design</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal hidden">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h3>Smart Home Controller</h3>
+            <p>Control home appliances using Arduino and a custom mobile app interface.</p>
+            <p><strong>Tech:</strong> Arduino Mega, Relays, Bluetooth Module</p>
+            <p><strong>Features:</strong> Remote control, timer functionality</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
