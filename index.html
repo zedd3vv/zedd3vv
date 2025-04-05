@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zedd3vv - Arduino Enthusiast</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -32,8 +33,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <h1 class="hero-title">Zed Magbanua</h1>
-            <p class="hero-subtitle">STEM 12 Student</p>
+            <h1 class="hero-title">Zedrick Magbanua</h1>
+            <p class="hero-subtitle">STEM 12 Student | Arduino Innovator</p>
+            <div class="hero-circuit"></div>
         </div>
     </section>
 
@@ -42,7 +44,7 @@
         <div class="section-container">
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
-                <img src="profile.jpg" alt="Zedrick Magbanua's profile picture" class="about-img">
+                <img src="profile.jpg" alt="Zedrick Magbanua" class="about-img">
                 <div class="about-content">
                     <p class="about-text">I am a STEM 12 student with a passion for technology and aviation, specializing in Arduino-based projects. I aim to blend my love for coding with real-world applications.</p>
                     <p class="about-skills"><strong>Skills:</strong> Arduino, C++, HTML, CSS, JavaScript, Python</p>
@@ -79,12 +81,26 @@
     <section id="contact" class="section">
         <div class="section-container">
             <h2 class="section-title">Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Name" class="form-input">
-                <input type="email" placeholder="Email" class="form-input">
-                <textarea placeholder="Message" class="form-textarea" rows="4"></textarea>
+            <form class="contact-form" action="https://formspree.io/f/xanepzpl" method="POST">
+                <input type="text" name="name" placeholder="Name" class="form-input" required>
+                <input type="email" name="email" placeholder="Email" class="form-input" required>
+                <textarea name="message" placeholder="Message" class="form-textarea" rows="4" required></textarea>
                 <button type="submit" class="form-button">Send Message</button>
             </form>
+            <div class="contact-details">
+                <a href="https://github.com/zedd3vv" target="_blank" class="contact-link">
+                    <img src="Icons/github.png" alt="GitHub Icon" class="contact-icon">
+                    zedd3vv
+                </a>
+                <a href="https://www.facebook.com/zedrick.magbanua.9/" target="_blank" class="contact-link">
+                    <img src="Icons/facebook.png" alt="Facebook Icon" class="contact-icon">
+                    Zedrick Magbanua
+                </a>
+                <a href="https://discord.com/users/zxyyyzz" target="_blank" class="contact-link">
+                    <img src="Icons/discord.png" alt="Discord Icon" class="contact-icon">
+                    zxyyyzz
+                </a>
+            </div>
         </div>
     </section>
 
