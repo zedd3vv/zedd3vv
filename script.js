@@ -33,7 +33,8 @@ const closeButtons = document.querySelectorAll('.modal-close');
 // Ensure all modals are hidden on page load
 document.addEventListener('DOMContentLoaded', () => {
     modals.forEach(modal => {
-        modal.classList.add('hidden'); // Forcefully add 'hidden' to all modals
+        modal.classList.add('hidden'); // Forcefully hide all modals
+        modal.style.display = 'none'; // Extra layer of hiding
     });
 });
 
@@ -45,6 +46,7 @@ projectLinks.forEach(link => {
         const modal = document.getElementById(modalId);
         if (modal) {
             modal.classList.remove('hidden');
+            modal.style.display = 'flex'; // Show the modal
         } else {
             console.error(`Modal with ID ${modalId} not found`);
         }
@@ -54,10 +56,11 @@ projectLinks.forEach(link => {
 // Close modal when clicking "X"
 closeButtons.forEach(button => {
     button.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent any default button behavior
+        e.preventDefault();
         const modal = button.closest('.modal');
         if (modal) {
             modal.classList.add('hidden');
+            modal.style.display = 'none'; // Explicitly hide
         } else {
             console.error('No parent modal found for close button');
         }
@@ -69,6 +72,7 @@ modals.forEach(modal => {
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.add('hidden');
+            modal.style.display = 'none'; // Explicitly hide
         }
     });
 });
