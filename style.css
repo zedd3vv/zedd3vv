@@ -322,11 +322,18 @@ body {
 
 .modal-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
     font-size: 1.5rem;
+    background: none;
+    border: none;
     cursor: pointer;
     color: #333;
+    padding: 0.25rem;
+}
+
+.modal-close:hover {
+    color: #003087;
 }
 
 .modal-content h3 {
